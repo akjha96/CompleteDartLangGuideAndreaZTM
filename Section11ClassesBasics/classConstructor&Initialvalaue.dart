@@ -34,7 +34,7 @@ class BankAccount {
 void main() {
   final bankAccount = BankAccount(accountHolder: 'Zoe', balance: 100);
   bankAccount.deposit(100);
-  double withdrawnAmount = 50;
+  double withdrawnAmount = 250;
   final withdrawlSuccess = bankAccount.withdraw(withdrawnAmount);
   withdrawlSuccess
       ? print('Successfully Withdrawn amount \$$withdrawnAmount')

@@ -24,8 +24,10 @@ class BankAccount {
 
 void main() {
   final bankAccount = BankAccount('Auzo', 100);
+  bankAccount._balance = 200;
+  print(bankAccount.displayBalance());
   bankAccount.deposit(100);
-  double withdrawnAmount = 50;
+  double withdrawnAmount = 5110;
   final withdrawlSuccess = bankAccount.withdraw(withdrawnAmount);
   withdrawlSuccess
       ? print('Successfully Withdrawn amount \$$withdrawnAmount')
