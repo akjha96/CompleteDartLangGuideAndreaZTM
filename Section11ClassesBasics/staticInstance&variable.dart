@@ -10,7 +10,7 @@ class Strings {
 
 void main() {
   final s = Strings();
-  print(s.welcome); // This will not work cause static variables/ methods can
+  // print(s.welcome); // This will not work cause static variables/ methods can
   // only be accessed by class itself and not by any of its instances
   print(Strings.sayHi);
   print(Strings.welcome);
